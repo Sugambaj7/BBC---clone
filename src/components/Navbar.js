@@ -1,5 +1,6 @@
 import React from "react";
 import image from "../images/bbclogo.png";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   return (
@@ -14,7 +15,9 @@ export const Navbar = () => {
         </div>
         <div>
           <ul className="flex list-none">
-            <li className="hover:border-b border-white-600">Home</li>
+            <li className="hover:border-b border-white-600">
+              <Link to="/">Home</Link>
+            </li>
             <li className="ml-8 hover:border-b border-white-600">News</li>
             <li className="ml-8 hover:border-b border-white-600">Sport</li>
             <li className="ml-8 hover:border-b border-white-600">Earth</li>
